@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 50% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 160 84% 39%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 262 83% 63%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom route colors */
+    --route-primary: #3b82f6;
+    --route-secondary: #10b981;
+    --route-accent: #8b5cf6;
+    --route-background: #f0f9ff;
+    --route-dark: #1e293b;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 160 84% 39%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 262 83% 63%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 224.3 76.3% 48%;
+
+    /* Custom route colors for dark mode */
+    --route-primary: #60a5fa;
+    --route-secondary: #34d399;
+    --route-accent: #a78bfa;
+    --route-background: #0f172a;
+    --route-dark: #f8fafc;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.mapboxgl-map {
+  @apply rounded-xl;
+}
+
+.location-marker {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--route-primary);
+  border: 2px solid white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marker-number {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.start-marker {
+  background-color: var(--route-primary);
+}
+
+.end-marker {
+  background-color: var(--route-secondary);
+}
+
+.stop-marker {
+  background-color: var(--route-accent);
+}
+
+/* Estilo para los puntos de control de edición de ruta */
+.control-point-marker {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid var(--route-primary);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: grab;
+}
+
+.control-point-marker:hover {
+  background-color: var(--route-primary);
+  transform: scale(1.2);
+}
+
+/* Estilo para el marcador de posición actual en la navegación */
+.current-position-marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--route-primary);
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+  position: relative;
+}
+
+.current-position-marker::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(59, 130, 246, 0.2);
+  transform: translate(-50%, -50%);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.mapboxgl-popup-content {
+  @apply bg-background border border-border rounded-lg shadow-lg p-3;
+}
+
+.route-line {
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.primary-route {
+  stroke: var(--route-primary);
+}
+
+.secondary-route {
+  stroke: var(--route-secondary);
+}
+

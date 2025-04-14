@@ -1,0 +1,58 @@
+{
+  "pages": {
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/styles.css",
+      "static/chunks/styles.js",
+      "static/chunks/vendors-_app-pages-browser_node_modules_supabase_supabase-js_dist_module_index_js-_app-pages--f4bda4.js",
+      "static/chunks/vendors-_app-pages-browser_node_modules_supabase_auth-helpers-nextjs_dist_index_js-_app-pages-2aecbd.js",
+      "static/chunks/vendors-_app-pages-browser_node_modules_radix-ui_react-toast_dist_index_mjs.js",
+      "static/chunks/vendors-_app-pages-browser_node_modules_next_dist_compiled_mini-css-extract-plugin_hmr_hotMod-927d96.js",
+      "static/chunks/_app-pages-browser_components_ui_button_tsx-_app-pages-browser_components_ui_dropdown-menu_ts-bced2c.js",
+      "static/chunks/_app-pages-browser_lib_supabase_index_ts.js",
+      "static/chunks/_app-pages-browser_components_Header_tsx.js",
+      "static/chunks/_app-pages-browser_components_ui_toaster_tsx.js",
+      "static/chunks/app/layout.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/styles.css",
+      "static/chunks/styles.js",
+      "static/chunks/vendors-_app-pages-browser_node_modules_supabase_supabase-js_dist_module_index_js-_app-pages--f4bda4.js",
+      "static/chunks/vendors-_app-pages-browser_node_modules_radix-ui_react-toast_dist_index_mjs.js",
+      "static/chunks/vendors-_app-pages-browser_node_modules_lucide-react_dist_esm_icons_circle-alert_js-_app-page-bf45b7.js",
+      "static/chunks/vendors-_app-pages-browser_node_modules_next_dist_build_webpack_loaders_next-flight-loader_ac-249dc6.js",
+      "static/chunks/vendors-_app-pages-browser_node_modules_lucide-react_dist_esm_icons_arrow-left_js-_app-pages--6a7f68.js",
+      "static/chunks/_app-pages-browser_components_ui_button_tsx-_app-pages-browser_components_ui_dropdown-menu_ts-bced2c.js",
+      "static/chunks/_app-pages-browser_lib_supabase_index_ts.js",
+      "static/chunks/_app-pages-browser_components_ui_toaster_tsx.js",
+      "static/chunks/_app-pages-browser_components_ui_alert_tsx-_app-pages-browser_components_ui_card_tsx.js",
+      "static/chunks/app/page.js"
+    ],
+    "/signin/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/vendors-_app-pages-browser_node_modules_supabase_supabase-js_dist_module_index_js-_app-pages--f4bda4.js",
+      "static/chunks/vendors-_app-pages-browser_node_modules_supabase_auth-helpers-nextjs_dist_index_js-_app-pages-2aecbd.js",
+      "static/chunks/vendors-_app-pages-browser_node_modules_lucide-react_dist_esm_icons_circle-alert_js-_app-page-bf45b7.js",
+      "static/chunks/_app-pages-browser_components_ui_button_tsx-_app-pages-browser_components_ui_dropdown-menu_ts-bced2c.js",
+      "static/chunks/_app-pages-browser_components_Header_tsx.js",
+      "static/chunks/_app-pages-browser_components_ui_alert_tsx-_app-pages-browser_components_ui_card_tsx.js",
+      "static/chunks/app/signin/page.js"
+    ],
+    "/signin/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/_app-pages-browser_node_modules_next_dist_build_webpack_loaders_next-flight-client-entry-load-0e8c89.js",
+      "static/chunks/app/signin/loading.js"
+    ],
+    "/auth/callback/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/_app-pages-browser_node_modules_next_dist_build_webpack_loaders_next-flight-client-entry-load-0e8c89.js",
+      "static/chunks/app/auth/callback/route.js"
+    ]
+  }
+}
